@@ -1,0 +1,119 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    background-color: rgb(155, 165, 240);
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.header{
+    text-align: center;
+    background-color: rgb(32, 50, 110);
+    border: 0;
+    margin-top: 5px;
+    padding: 0;
+
+
+}
+
+    .header h1{
+        font-size: 60px;
+        margin-bottom: 5px;
+        color: rgb(11, 120, 254) ;
+    }
+
+    .header h2{
+        margin-top: 2px;
+        color: rgb(204, 176, 19);
+    }
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+
+
+}
+
+.game-mode{
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+
+
+}
+    button{
+        cursor: pointer;
+        box-sizing: border-box;
+        font-size: 24px;
+        font-weight: 600;
+        border-radius: 10px;
+        border-color: rgb(0, 123, 255);
+        border: 3px solid;
+        color: rgb(2, 0, 148);
+        background-color: rgb(254, 154, 152);
+
+    }
+
+.player-info{
+    margin: 22px;
+    border: solid;
+    border-radius: 12px;
+    border-color: rgb(20, 20, 68);
+    background-color: bisque;
+    color: rgb(13, 4, 81);
+
+}
+
+.board{
+    margin-top: 3px;
+    height: 450px ;
+    width: 450px ;
+    display: grid;
+    grid-template-columns: repeat(3, 150px) ;
+    grid-template-rows: repeat(3, 150px) ;
+
+}
+
+    .cell{
+        cursor: pointer;
+        font-size: 52px;
+        font-weight: 600;
+        border: 2px solid;
+        color: rgb(0, 28, 119);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .cell:nth-child(1),
+    .cell:nth-child(2),
+    .cell:nth-child(3){
+        border-top: none;
+    }
+
+    .cell:nth-child(3),
+    .cell:nth-child(6),
+    .cell:nth-child(9){
+        border-right: none;
+    }
+
+    .cell:nth-child(7),
+    .cell:nth-child(8),
+    .cell:nth-child(9){
+        border-bottom: none;
+    }
+
+    .cell:nth-child(1),
+    .cell:nth-child(4),
+    .cell:nth-child(7){
+        border-left: none;
+    }
